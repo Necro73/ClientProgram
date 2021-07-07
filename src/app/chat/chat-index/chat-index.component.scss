@@ -1,0 +1,199 @@
+//.chat-root {
+//  display: flex;
+//  flex-direction: column;
+//  overflow-y: scroll;
+//  flex: 1 1 auto;
+//
+//  .chat-root__message {
+//    white-space: pre-line;
+//  }
+//}
+//
+//.chat-input-field {
+//  width: 100%;
+//}
+//
+//.sidenav-container {
+//  height: 100vh;
+//}
+//
+//.sidenav-left {
+//  width: 260px;
+//}
+//
+//.chat-sidenav-content {
+//  display: flex;
+//  flex-direction: column;
+//  overflow: hidden!important;
+//}
+//
+//.chat-top {
+//  flex: 0 1 auto;
+//  border: solid 1px #555555;
+//  border-radius: 2px;
+//  height: 40px;
+//  padding: 0 16px 0 8px;
+//}
+//
+//.chat-bottom {
+//  flex: 0 1;
+//  padding-left: 20px;
+//  padding-right: 20px;
+//}
+//
+//.send-button {
+//  height:60px;
+//  width: 64px;
+//  display: inline-flex;
+//  padding-left: 2px;
+//}
+//
+//.button-send {
+//  height:60px;
+//  width: 64px;
+//}
+//
+//.avatar {
+//  width: 32px;
+//  height: 32px;
+//  border-radius: 100%;
+//}
+//
+//.mess {
+//  width: 80%;
+//  display: inline-block;
+//  padding-left: 10px;
+//  padding-top: 10px;
+//}
+//
+//.mess-name {
+//  margin-top: 0px;
+//  margin-bottom: 0px;
+//  font-size: 110%;
+//}
+//
+//.mess-text {
+//  margin-top: 0px;
+//  margin-bottom: 0px;
+//}
+//
+///* width */
+//::-webkit-scrollbar {
+//  width: 15px;
+//}
+//
+///* Track */
+//::-webkit-scrollbar-track {
+//  box-shadow: inset 0 0 5px #666666;
+//  border-radius: 10px;
+//}
+//
+///* Handle */
+//::-webkit-scrollbar-thumb {
+//  background: #444444;
+//  border-radius: 10px;
+//}
+//
+///* Handle on hover */
+//::-webkit-scrollbar-thumb:hover {
+//  background: #565656;
+//}
+//
+//.p-workspace__channel_sidebar {
+//  display: flex;
+//  flex-direction: column;
+//  min-height: 0;
+//  min-width: 0;
+//  grid-area: p-workspace__channel_sidebar;
+//  padding: 0 16px 0 8px;
+//}
+//
+//.p-ia__sidebar_header {
+//  position: relative;
+//  display: flex;
+//  align-items: stretch;
+//  height: 64px;
+//}
+//
+//.p-ia__sidebar_header__button {
+//  background-color: initial;
+//  padding-left: 16px;
+//}
+//
+//.p-ia__sidebar_header__info {
+//  flex: 1;
+//  min-width: 0;
+//  order: 1;
+//  padding-top: 10px;
+//}
+//
+//.p-ia__sidebar_header__team_name {
+//  display: flex;
+//  align-items: center;
+//  max-width: 100%;
+//  padding-left: 4px;
+//  margin-left: -4px;
+//}
+//
+//.c-button-unstyled {
+//  background: none;
+//  border: 0;
+//  color: inherit;
+//  font: inherit;
+//  margin: 0;
+//  line-height: inherit;
+//  overflow: initial;
+//  padding: 0;
+//  text-align: initial;
+//  vertical-align: initial;
+//  cursor: pointer;
+//}
+//
+//.p-ia__sidebar_header__team_name_text {
+//  min-width: 0;
+//  font-weight: 900;
+//  text-overflow: ellipsis;
+//  overflow: hidden;
+//  white-space: nowrap;
+//  display: block;
+//}
+//
+//.p-workspace__primary_view {
+//  grid-template-areas: "p-workspace__primary_view_contents";
+//  grid-template-rows: auto;
+//  min-width: 0;
+//  min-height: 0;
+//  grid-area: p-workspace__primary_view;
+//  display: grid;
+//  grid-template-columns: auto;
+//}
+//
+//.p-ia__view_header__info {
+//  flex-shrink: 1;
+//  min-width: 0;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: flex-start;
+//  max-width: 100%;
+//}
+//
+//.p-ia__view_header__title_and_channel_section {
+//  display: flex;
+//  flex-direction: row;
+//  align-items: baseline;
+//  flex-wrap: nowrap;
+//  min-width: 20px;
+//  max-width: 100%;
+//  padding-top: 10px;
+//}
+//
+//p-classic_nav__model__title__name {
+//  font-size: 15px;
+//  line-height: 1.46668;
+//  flex-shrink: 1;
+//  min-width: 0;
+//  font-weight: 900;
+//  display: inline-flex;
+//  max-width: 100%;
+//  align-items: baseline;
+//}

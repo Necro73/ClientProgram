@@ -1,0 +1,18 @@
+<div class="user-item-root">
+  <a class="user-item" [matMenuTriggerFor]="menu" [class.userActive]="isYou()">
+    <div class="avatar">
+
+    </div>
+    <div class="user-content">
+      <div class="user-content-name">{{user.userName}}</div>
+<!--      <div class="user-content-role">{{user.role}}</div>-->
+    </div>
+  </a>
+</div>
+
+<mat-menu #menu="matMenu" xPosition="after">
+  <button mat-menu-item (click)="goToDM()" [disabled]="isYou()">
+    <mat-icon>dialpad</mat-icon>
+    <span>Личные сообщения</span>
+  </button>
+</mat-menu>

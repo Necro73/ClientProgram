@@ -1,0 +1,33 @@
+<div class="message-container task-complete" [class.task-incomplete]="!task.isCompleted">
+  <div class="message-content" [matMenuTriggerFor]="menu">
+    <div class="message-avatar">
+      <div class="message-avatar-block">
+      </div>
+    </div>
+    <div class="message-text-container">
+      <div class="message-author-container">
+        <div class="author-text">Задача от {{task.author.userName}} {{isGived ? ' данная ' + task.user.userName : ''}}</div>
+        <div class="time-text">{{task.message.dateTime.format("HH:mm")}}</div>
+      </div>
+      <div class="message-text">
+        {{task.message.content}}
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<mat-menu #menu="matMenu" xPosition="after">
+  <button mat-menu-item (click)="mark(true)" *ngIf="!task.isCompleted && !isGived">
+    <mat-icon>done</mat-icon>
+    <span>Выполнено</span>
+  </button>
+  <button mat-menu-item (click)="mark(false)" *ngIf="task.isCompleted && !isGived">
+    <mat-icon>cancel</mat-icon>
+    <span>Не выполнено</span>
+  </button>
+  <button mat-menu-item (click)="delete()" *ngIf="isGived">
+    <mat-icon>delete</mat-icon>
+    <span>Удалить задачу</span>
+  </button>
+</mat-menu>

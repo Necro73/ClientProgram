@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>Создать новый канал</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill" class="create-channel-form">
+    <mat-label>Название канала</mat-label>
+    <input matInput [(ngModel)]="nameChannel">
+  </mat-form-field>
+  <button mat-flat-button (click)="createChannel()">
+    Создать
+  </button>
+</div>

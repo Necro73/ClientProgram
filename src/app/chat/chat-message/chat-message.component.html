@@ -1,0 +1,47 @@
+<div class="message-container">
+  <div class="message-content" [matMenuTriggerFor]="menu">
+
+    <div class="message-avatar">
+      <div class="message-avatar-block">
+      </div>
+    </div>
+    <div class="message-text-container">
+      <div class="message-author-container">
+        <div class="author-text">{{message.author.userName}}</div>
+        <div class="time-text">{{message.dateTime.format("HH:mm")}}</div>
+      </div>
+      <div class="message-text">
+        {{message.content}}
+      </div>
+    </div>
+<!--    <div class="message-toolbar" *ngIf="isOver">-->
+<!--      <button mat-icon-button><mat-icon>home</mat-icon></button>-->
+<!--      <button mat-icon-button><mat-icon>home</mat-icon></button>-->
+<!--    </div>-->
+  </div>
+  <div class="emoji-list" *ngIf="message.emojis.length > 0">
+    <mat-chip-list>
+      <mat-chip
+        [matTooltip]="getUserNameById(item.userId)"
+        *ngFor="let item of message.emojis">
+        <ngx-emoji [emoji]="item.type" set="twitter" size="20" class="chip-emoji"></ngx-emoji>
+      </mat-chip>
+    </mat-chip-list>
+
+  </div>
+<!--  <mat-chip-list aria-label="Fish selection">-->
+<!--    <mat-chip>One fish</mat-chip>-->
+<!--    <mat-chip>Two fish</mat-chip>-->
+<!--  </mat-chip-list>-->
+</div>
+
+<mat-menu #menu="matMenu" xPosition="after">
+  <button mat-menu-item (click)="markAsTask()">
+    <mat-icon>task</mat-icon>
+    <span>Пометить как задачу</span>
+  </button>
+  <button mat-menu-item (click)="callEmojiPicker()">
+    <mat-icon>tag_faces</mat-icon>
+    <span>Добавить эмодзи</span>
+  </button>
+</mat-menu>
